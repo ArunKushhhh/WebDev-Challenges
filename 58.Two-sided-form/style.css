@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: midnightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 60vh;
+  width: 60vw;
+  background-color: rgb(197, 2, 80);
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left h3,
+.right h3 {
+  font-size: 2vw;
+  color: whitesmoke;
+}
+
+.btn {
+  padding: 12px 32px;
+  margin-top: 2vw;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgb(197, 2, 80);
+  border: 1px solid rgb(197, 2, 80);
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+.login,
+.signup {
+  height: 80vh;
+  width: 50%;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  top: -10vh;
+  transition: all ease 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2vw;
+}
+
+.login h2,
+.signup h2 {
+  margin-bottom: 1vw;
+}
+
+.login input,
+.signup input {
+  width: 80%;
+  margin: 8px 0;
+  padding: 8px 10px;
+}
